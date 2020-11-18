@@ -71,3 +71,36 @@ img {
 .clear {
   clear: both;
 }
+/* ADAPTIVE FOR DISPLAY <=420px */
+@media screen and (max-width: 420px){
+  .row{
+    width:90%;
+    margin:30px auto;
+  }
+  img{
+    height: 150px;
+    padding-top: 20px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right{
+    width:100%;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width:100%;
+  }
+  #steps img{
+    height: 120px;
+  }
+  #why .row img {
+    height: 100px;
+  }
+}
+/* ADAPTIVE FOR DISPLAY <=420px */
