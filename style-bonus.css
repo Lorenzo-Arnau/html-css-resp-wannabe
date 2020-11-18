@@ -1,0 +1,137 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+/* ADAPTIVE FOR DISPLAY TABLET >= 421px <=768px*/
+@media screen and (max-width: 768px){
+  .row{
+    width:90%;
+    margin:50px auto;
+  }
+  img{
+    height: 150px;
+    padding-top: 20px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right{
+   width:calc(50% - 40px);
+   padding: 0px 20px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central{
+   width:calc(50% - 40px);
+   padding: 0px 20px;
+  }
+  #steps .row>.right{
+    width: 100%
+  }
+  #steps img{
+    height: 150px;
+  }
+  #why .row img {
+    height: 130px;
+  }
+}
+/* ADAPTIVE FOR DISPLAY TABLET >= 421px <=768px */
+
+/* ADAPTIVE FOR DISPLAY MOBILE PHONE <=420px */
+@media screen and (max-width: 420px){
+  .row{
+    width:90%;
+    margin:30px auto;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right{
+    width:100%;
+    padding: 0;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width:100%;
+    padding: 0;
+  }
+  #steps img{
+    height: 120px;
+  }
+  #why .row img {
+    height: 100px;
+  }
+}
+/* ADAPTIVE FOR DISPLAY MOBILE PHONE <=420px */
